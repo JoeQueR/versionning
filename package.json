@@ -1,0 +1,27 @@
+{
+  "name": "versionning",
+  "version": "1.0.0",
+  "description": "Simple snapshot and release of a package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeQueR/versionning.git"
+  },
+  "keywords": [
+    "snapshot",
+    "versionning",
+    "package.json",
+    "version",
+    "node",
+    "npm"
+  ],
+  "author": "Vincent Sébille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoeQueR/versionning/issues"
+  },
+  "homepage": "https://github.com/JoeQueR/versionning#readme"
+}
