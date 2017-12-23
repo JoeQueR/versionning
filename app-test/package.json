@@ -1,6 +1,6 @@
 {
-  "name": "app-test",
-  "version": "1.0.0",
+  "name": "app-test-versionning",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,9 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "npm publish --registry http://localhost:4873"
+    "packagr": "ng-packagr -p ng-package.json && cd dist && npm pack && cd ..",
+    "snapshot": "npm publish dist --registry http://localhost:4873"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
