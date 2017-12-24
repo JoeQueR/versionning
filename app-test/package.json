@@ -9,8 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json && cd dist && npm pack && cd ..",
-    "snapshot": "npm publish dist --registry http://localhost:4873"
+    "snapshot": "./node_modules/ts-node/dist/bin.js ./snapshot.ts && ng-packagr -p ng-package.json && cd dist && npm pack && cd .. && npm publish dist --registry http://localhost:4873"
   },
   "private": false,
   "dependencies": {
