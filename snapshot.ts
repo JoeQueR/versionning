@@ -36,10 +36,11 @@ class VersionsForApp {
   }
 
   getLastSnapshot(version: string): string {
-    return this.filterVersion(version)
+      const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+      return this.filterVersion(version)
       .slice(0)
       .filter((versionToFilter) => versionToFilter.indexOf('-') !== -1)
-      .sort()
+      .sort(collator.compare)
       .reverse()
       .shift();
   }

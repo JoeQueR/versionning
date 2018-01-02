@@ -28,10 +28,11 @@ class VersionsForApp {
         return this.filterVersion(version).filter((versionFilterred) => versionFilterred.indexOf('-') === -1).length > 0;
     }
     getLastSnapshot(version) {
+        const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
         return this.filterVersion(version)
             .slice(0)
             .filter((versionToFilter) => versionToFilter.indexOf('-') !== -1)
-            .sort()
+            .sort(collator.compare)
             .reverse()
             .shift();
     }
