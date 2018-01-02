@@ -1,0 +1,29 @@
+{
+  "name": "versionning",
+  "version": "1.0.0",
+  "description": "Versionning / Snapshot des releases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeQueR/versionning.git"
+  },
+  "keywords": [
+    "versionning",
+    "version",
+    "snapshot"
+  ],
+  "author": "Vincent Sébille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoeQueR/versionning/issues"
+  },
+  "homepage": "https://github.com/JoeQueR/versionning#readme",
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "typings": "^2.1.1"
+  }
+}
